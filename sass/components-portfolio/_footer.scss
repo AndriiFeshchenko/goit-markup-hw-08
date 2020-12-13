@@ -104,6 +104,7 @@
     align-items: center;
     @media screen and (min-width: 768px) {
       width: 50%;
+      margin-bottom: 102px;
     }
     @media screen and (min-width: 1200px) {
       width: auto;
@@ -116,7 +117,6 @@
     border: none;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color $duration;
     &:hover,
     &:focus {
       outline: none;

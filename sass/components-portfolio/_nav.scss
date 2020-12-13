@@ -1,5 +1,10 @@
+.buttons-menu {
+  @media screen and (max-width: 767px) {
+    position: relative;
+  }
+}
 .menu-button {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
   position: absolute;
@@ -63,9 +68,8 @@
     0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
   background-color: #ffffff;
   position: absolute;
-  bottom: 0;
+  top: 60px;
   left: 0;
-  transform: translateY(100%);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -74,6 +78,7 @@
   z-index: 3;
   padding: 60px 0;
   @media screen and (max-width: 767px) {
+    max-width: 100%;
     &.is-hidden {
       opacity: 0;
       pointer-events: none;
@@ -101,13 +106,13 @@
   justify-content: flex-start;
 }
 .nav-list {
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-  }
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 
   .nav-item {
     margin-right: auto;

@@ -39,7 +39,6 @@
   resize: none;
   padding: 12px 42px;
   width: 100%;
-  transition: border $duration;
   &:focus {
     outline: none;
     border: 1px solid $blue;
@@ -69,6 +68,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
   &:checked + svg {
     background-color: $blue;
     border: 2px solid $blue;
